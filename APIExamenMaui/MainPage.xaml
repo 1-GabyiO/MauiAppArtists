@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APIExamenMaui.MainPage">
+    <ScrollView>
+        <StackLayout Spacing="20" Padding="20">
+            
+            <!-- Sección de Artist -->
+            <Frame CornerRadius="15" Padding="15" Margin="10" BackgroundColor="#e8eaf6">
+                <StackLayout>
+                    <Label Text="Artist" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#1a237e"/>
+
+                    <Label Text="Id Artist:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtId" Placeholder="Ingrese ID" BackgroundColor="#ffffff" TextColor="#000000"/>
+
+                    <Label Text="Name:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtName" Placeholder="Ingrese el nombre" BackgroundColor="#ffffff" TextColor="#000000"/>
+                   
+                    <Label Text="Last Name:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtLastName" Placeholder="Ingrese el apellido" BackgroundColor="#ffffff" TextColor="#000000"/>
+
+                    <Label Text="Nationality:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtNationality" Placeholder="Ingrese la nacionalidad" BackgroundColor="#ffffff" TextColor="#000000"/>
+
+                    <Label Text="Birth Day:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtBirthDay" Placeholder="Ingrese la fecha de cumpleaños" BackgroundColor="#ffffff" TextColor="#000000"/>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
+                        <Button x:Name="cmdCreate" Text="INSERTAR" Clicked="cmdCreate_Clicked"/>
+                        <Button x:Name="cmdRead" Text="LEER" Clicked="cmdRead_Clicked"/>
+                        <Button x:Name="cmdUpdate" Text="ACTUALIZAR" Clicked="cmdUpdate_Clicked"/>
+                        <Button x:Name="cmdDelete" Text="BORRAR" Clicked="cmdDelete_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Sección de Artwork -->
+            <Frame CornerRadius="15" Padding="15" Margin="10" BackgroundColor="#e8eaf6">
+                <StackLayout>
+                    <Label Text="Artwork" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#1a237e"/>
+
+                    <Label Text="Id Artwork:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtIdArt" Placeholder="Ingrese ID del artwork" BackgroundColor="#ffffff" TextColor="#000000"/>
+
+                    <Label Text="Name Artwork:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtNameArtwork" Placeholder="Ingrese nombre del artwork" BackgroundColor="#ffffff" TextColor="#000000"/>
+
+                    <Label Text="Publication Year:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtPublicationYear" Placeholder="Año de publicacion" BackgroundColor="#ffffff" TextColor="#000000"/>
+
+                    <Label Text="Technique:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtTechnique" Placeholder="Tecnica" BackgroundColor="#ffffff" TextColor="#000000"/>
+
+                    <Label Text="Description:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtDescription" Placeholder="Descripcion" BackgroundColor="#ffffff" TextColor="#000000"/>
+
+                    <Label Text="Artistid:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtArtistid" Placeholder="ID de Artist" BackgroundColor="#ffffff" TextColor="#000000"/>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
+                        <Button x:Name="cmdCreateArtw" Text="INSERTAR" Clicked="cmdCreateArtw_Clicked"/>
+                        <Button x:Name="cmdReadArtw" Text="LEER" Clicked="cmdReadArtw_Clicked"/>
+                        <Button x:Name="cmdUpdateArtw" Text="ACTUALIZAR" Clicked="cmdUpdateArtw_Clicked"/>
+                        <Button x:Name="cmdDeleteArtw" Text="BORRAR" Clicked="cmdDeleteArtw_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
